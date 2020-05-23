@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url(src/Oswald-VariableFont_wght.ttf);
+    src: url(./src/Oswald-VariableFont_wght.ttf);
 }
 body{
     margin: 0px;
