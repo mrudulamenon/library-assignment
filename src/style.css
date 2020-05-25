@@ -64,11 +64,18 @@ a:hover {
     transform: scale(2);
 }
 
-#content{
+.content{
     z-index: 10;
     background: white;
     min-height: 400px;
     position: relative;
+}
+.fixedheight{
+    height: 400px;
+    overflow: hidden;
+}
+.expandedheight{
+    height: auto;
 }
 footer{
     position: absolute;
