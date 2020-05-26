@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-md-4">
-                    <form class="mb-5" action="login.html" onsubmit="return validate()">
+                    <form class="mb-5" action="login.html" id="frmsignup" id="frmsignup">
                         <div class="form-group">
                             <label>First Name<span class="text-danger">*</span></label>
                             <label for="errorfirstname" id="errorfirstname"></label>
@@ -80,10 +80,10 @@
                         <div class="form-group form-check">
                             <label for="errorcheckbox" id="errorcheckbox"></label><br>
                             <input type="checkbox" class="form-check-input" id="check1">
-                            <label class="form-check-label" for="check1">Agree our <a href="#" target="_blank" rel="noopener noreferrer">Terms and Policy</a></label>
+                            <label class="form-check-label" for="check1">Agree our <a href="#" onclick="return false;">Terms and Policy</a></label>
                             <span class="text-danger">*</span>
                         </div>
-                        <button class="btn btn-primary btn-block btnsubmit">Sign Up</button>
+                        <button class="btn btn-primary btn-block btnsubmit" >Sign Up</button>
                         <!-- <a href="signIn.html" class="btn btn-success btn-block"> Submit </a> -->
                     </form>
                 </div>

@@ -50,26 +50,13 @@ a:hover {
     list-style: none;
     text-decoration: none;
 }
-.people {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 80px;
-    border-radius: 50%;
-    max-width: 80px;
-    padding: 10px;
-    transition: transform .2s;
-}
-.people:hover{
-    transform: scale(2);
-}
-
 .content{
     z-index: 10;
     background: white;
     min-height: 400px;
     position: relative;
 }
+/* height change applied only for home */
 .fixedheight{
     height: 400px;
     overflow: hidden;
@@ -77,6 +64,7 @@ a:hover {
 .expandedheight{
     height: auto;
 }
+/* Common styling - Footer  */
 footer{
     position: absolute;
     bottom: 0;
@@ -122,6 +110,20 @@ footer{
 }
 .social a:hover{
     font-weight: bolder;
+}
+/* Home Page styling */
+.people {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 80px;
+    border-radius: 50%;
+    max-width: 80px;
+    padding: 10px;
+    transition: transform .2s;
+}
+.people:hover{
+    transform: scale(2);
 }
 .bookdetails{
     padding-bottom: 10px;

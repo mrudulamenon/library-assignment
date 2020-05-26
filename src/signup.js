@@ -24,6 +24,8 @@ phonenumber.addEventListener("focusout", phonenumbervalidation);
 password.addEventListener("focusout", passwordvalidation);
 passwordRe.addEventListener("focusout", passwordRevalidation);
 check1.addEventListener("change", checkvalidation);
+let frmsignup=document.getElementById("frmsignup");
+frmsignup.addEventListener("submit",validate);
 
 let emailExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 //= /^([\w.-]+)@([\w-]+).([a-z]{2,3})(.[a-z]{2,3})$/;
@@ -166,8 +168,9 @@ function checkvalidation() {
     }
 }
 
-function validate() {
-    // Basic Validation
+function validate(e) {
+    // Basic Validation 
+    e.preventDefault();    
     let returnvalue = true;
     let focuselement = null;
     let result = false;
@@ -228,7 +231,10 @@ function validate() {
         returnvalue = false;
         if (focuselement == null) { focuselement = check1; }
     }
-    focuselement.focus();
-    //alert(returnvalue);
-    return returnvalue;
+    //focuselement.focus();
+    // return returnvalue;   
+    if(returnvalue==true){
+        //alert(returnvalue);
+        frmsignup.submit();
+    } 
 }
